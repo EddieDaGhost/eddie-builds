@@ -13,6 +13,7 @@ import {
   Palette,
   FileCode,
   Hammer,
+  Cake,
   CheckCircle2,
 } from "lucide-react";
 import { projects, getProjectBySlug } from "@/lib/projects";
@@ -27,6 +28,7 @@ const iconMap: Record<string, React.ElementType> = {
   Palette,
   FileCode,
   Hammer,
+  Cake,
 };
 
 export function generateStaticParams() {

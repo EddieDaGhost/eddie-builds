@@ -276,6 +276,34 @@ export const projects: Project[] = [
     liveUrl: "#",
     githubUrl: "#",
   },
+  {
+    slug: "buttercream-dreams",
+    title: "Buttercream Dreams",
+    category: "E-Commerce",
+    description:
+      "Online bakery storefront with product catalog, cart, and Venmo/Zelle checkout flow.",
+    longDescription:
+      "Buttercream Dreams is a full-featured online bakery for a home baker selling custom cupcakes, cakes, and artisan breads. Customers browse a filterable product catalog, build an order in a slide-out cart drawer, and submit via a form that generates pre-filled payment instructions for Venmo and Zelle — no payment processor required.",
+    challenge:
+      "Home bakers take orders through Instagram DMs and spreadsheets, which is chaotic and unprofessional. They needed a real storefront without the cost and complexity of Shopify or Square.",
+    solution:
+      "Built a zero-dependency vanilla JS storefront with localStorage cart persistence, animated product cards, and a checkout flow that produces a mailto-pre-filled order email and displays Venmo/Zelle payment instructions — all as a static site with zero backend.",
+    techStack: ["HTML/CSS", "JavaScript", "Google Fonts", "localStorage", "Vercel"],
+    features: [
+      "13-product catalog with cupcakes, cakes, and breads",
+      "Category filter tabs with animated product grid",
+      "Slide-out cart drawer with quantity controls",
+      "Cart persists across page refreshes via localStorage",
+      "Order form with client-side validation",
+      "Post-order Venmo & Zelle payment instructions",
+      "CSS-art cupcake and cake illustrations — no images needed",
+      "Fully responsive — mobile hamburger menu, stacked layouts",
+    ],
+    color: "from-pink-500 to-fuchsia-600",
+    icon: "Cake",
+    liveUrl: "#",
+    githubUrl: "#",
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
