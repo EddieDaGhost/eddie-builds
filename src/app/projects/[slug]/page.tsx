@@ -92,14 +92,38 @@ export default async function ProjectDetailPage({
 
         {/* Action buttons */}
         <div className="flex flex-wrap gap-4 mt-8">
-          <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-medium">
-            <ExternalLink size={18} />
-            Live Demo
-          </span>
-          <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-foreground font-medium">
-            <Github size={18} />
-            Source Code
-          </span>
+          {project.liveUrl && project.liveUrl !== "#" ? (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-medium hover:opacity-90 transition-opacity"
+            >
+              <ExternalLink size={18} />
+              Live Demo
+            </a>
+          ) : (
+            <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-medium opacity-40 cursor-not-allowed" title="Coming soon">
+              <ExternalLink size={18} />
+              Live Demo
+            </span>
+          )}
+          {project.githubUrl && project.githubUrl !== "#" ? (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-foreground font-medium hover:opacity-90 transition-opacity"
+            >
+              <Github size={18} />
+              Source Code
+            </a>
+          ) : (
+            <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-foreground font-medium opacity-40 cursor-not-allowed" title="Coming soon">
+              <Github size={18} />
+              Source Code
+            </span>
+          )}
         </div>
       </div>
 

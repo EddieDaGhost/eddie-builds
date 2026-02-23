@@ -10,6 +10,8 @@ export type Project = {
   features: string[];
   color: string;
   icon: string;
+  liveUrl?: string;
+  githubUrl?: string;
 };
 
 export const categories = [
@@ -94,6 +96,8 @@ export const projects: Project[] = [
     ],
     color: "from-pink-500 to-rose-600",
     icon: "Sparkles",
+    liveUrl: "https://genuine-sunshine-9a7090.netlify.app",
+    githubUrl: "#",
   },
   {
     slug: "fitsync",
