@@ -22,6 +22,7 @@ export const categories = [
   "Mobile App",
   "API / Dev Tool",
   "AI / ML",
+  "Business Site",
 ];
 
 export const projects: Project[] = [
@@ -246,6 +247,34 @@ export const projects: Project[] = [
     ],
     color: "from-green-500 to-emerald-600",
     icon: "FileCode",
+  },
+  {
+    slug: "windy-city-masonry",
+    title: "Windy City Masonry",
+    category: "Business Site",
+    description:
+      "Professional website for a Chicago masonry contractor with service showcase and quote request form.",
+    longDescription:
+      "Windy City Masonry is a full-featured local business website built for a Chicago masonry contractor. It showcases the company's services, past work, and customer reviews while driving visitors toward a free estimate request. Designed to build trust with homeowners and rank well for local search terms.",
+    challenge:
+      "Local trades businesses often have no web presence or rely on outdated sites that fail to convert visitors. They needed a professional site that could compete with larger companies while feeling personal and trustworthy to Chicago homeowners.",
+    solution:
+      "Built a performance-optimised static site with strong visual hierarchy, real Chicago neighbourhood references, and a streamlined quote request form. Used CSS-art gallery placeholders, IntersectionObserver scroll animations, and a mobile-first layout that loads instantly on any device.",
+    techStack: ["HTML/CSS", "JavaScript", "Google Fonts", "Vercel"],
+    features: [
+      "8-section single-page layout with smooth scroll navigation",
+      "Service cards for 6 masonry specialties",
+      "CSS-art gallery with before/after project previews",
+      "Google-review-style testimonial cards",
+      "Chicago neighbourhood service area grid",
+      "Validated quote request form with mailto integration",
+      "Fully responsive — mobile, tablet, desktop",
+      "IntersectionObserver scroll-reveal animations",
+    ],
+    color: "from-orange-700 to-red-800",
+    icon: "Hammer",
+    liveUrl: "#",
+    githubUrl: "#",
   },
 ];
 
